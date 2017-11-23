@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd9e4108ad8c9504aa7dcc58e0395c01, type: 3}
+  m_Name: Rule04
+  m_EditorClassIdentifier: 
+  imgNodes:
+  - {fileID: 21300042, guid: cc615674bb992e8448604c2c1892cc10, type: 3}
+  - {fileID: 21300044, guid: cc615674bb992e8448604c2c1892cc10, type: 3}
+  imgLeaves:
+  - {fileID: 21300046, guid: cc615674bb992e8448604c2c1892cc10, type: 3}
+  - {fileID: 21300048, guid: cc615674bb992e8448604c2c1892cc10, type: 3}
+  - {fileID: 21300050, guid: cc615674bb992e8448604c2c1892cc10, type: 3}
+  initiator: F
+  ruleFs:
+  - rate: 0.39999998
+    rule: FF[+F]F[-F]F
+  - rate: 0.3
+    rule: FF[+F]F
+  - rate: 0.3
+    rule: FF[-F]F
+  ruleGs:
+  - rate: 1
+    rule: G
+  angleMin: {x: 0, y: 0, z: 20}
+  angleMax: {x: 0, y: 0, z: 30}
+  distMin: 0.25
+  distMax: 0.5
+  generations: 2
+  thickness: 0.05
+  tipScale: 0.2
+  leafScale: 4
+  leafZOffset: 0
